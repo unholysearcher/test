@@ -1,0 +1,500 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>SYNCHRONIC Test Task</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+    .mobile-main {
+      display: none;
+    }
+
+    .main-background {
+      background-image: url('https://s3-alpha-sig.figma.com/img/7853/b2bb/57ccc04e526291844a59f0c71f3d11a7?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CvXSC2PzrWwgC7kjo~8nE2WwG88Fo-C0u2qT5klNCjENw3LUIvB2hnKuIY~X4mejbnIlc4xGsxmBE11BbRm-rEI27iUu6k-UUGE9850PQxpNfLWXuUw7S5jJUHfEYysvWFaRHhR87SW3C-~MZV2HsxDrMuyB5z9-kVv3B8rU9SKcHFqM2Jf4036IPW21CgtXAJI865rr~~Renl98hA08mcjkLhY~s4WIvZibB6ia55vHyNGLfcpsv6Xr1J3Ha86W3lm~iEjx8nhZ9krwjBc-gA9uVXW9o2cI2blLwDMb0s7anQ7fBC7sEKdAZlZUItInXfzSM0ZWOn6EfzV4y8fdrA__'); 
+      background-position: center; 
+      background-size: cover; 
+      width: 100%; 
+      height: 961px;
+    }
+
+    .container {
+      width: 520px; 
+    }
+
+    .message--wrapper {
+      width: 520px;
+      height: 280px; 
+      margin-top: 20px;
+      background: linear-gradient(74.3deg, #00C6FB 0%, #005BEA 99.33%); 
+      border-radius: 17px; 
+    }
+
+    .message--info {
+      width: 260px;
+      margin-top: 21px; 
+      margin-left: 20px; 
+      margin-bottom: 55px;
+      color: #ffffff;
+    }
+
+    .message--info-title {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    .message--info-text {
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 20px;
+    }
+
+    .message--info-button {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 146px;
+      height: 40px;
+      padding-top: 8px;
+      padding-bottom: 8px; 
+      background: linear-gradient(90deg, #29323C 0%, #485563 100%); 
+      border-radius: 100px;
+      text-decoration: none;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .message--photo {
+      margin-top: 18px; 
+      margin-left: 10px; 
+      margin-bottom: 52px;
+      margin-right: 20px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #52575C;
+      cursor: pointer;
+      line-height: 20px;
+    }
+
+    .footer-contacts {
+      width: 353px;
+    }
+
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+      overflow-x: hidden;
+		}
+
+		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+      .desktop-main {
+        display: none;
+      }
+
+      .mobile-main {
+        display: block;
+      }
+
+      .container {
+        width: 300px; 
+      }
+      
+      .main-background { 
+        height: 1231px;
+      }
+
+      .message--wrapper {
+        height: 380px; 
+      }
+
+      .message--info {
+        width: 280px;
+        margin-top: 0; 
+        margin-left: 10px; 
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      .message--info-title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+
+      .message--info-text {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        line-height: 20px;
+        
+      }
+
+      .message--info-button {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 146px;
+        height: 40px;
+        margin-right: 67px;
+        margin-left: 67px;
+        padding-top: 8px;
+        padding-bottom: 8px; 
+        background: linear-gradient(90deg, #29323C 0%, #485563 100%); 
+        border-radius: 100px;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      .message--photo {
+        margin-top: 10px; 
+        margin-left: 10px; 
+        margin-bottom: 20px;
+        margin-right: 10px;
+      }
+
+      .footer-contacts {
+        width: auto;
+    }
+    }
+
+    @media only screen and (max-width: 319px) {
+       * {
+        display: none
+       }
+}
+
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0; font-family: Arial;">
+	<div style="font-size: 0px; font-color: #ffffff; opacity:0; visibility: hidden; width:0;height: 0; display: none;">TEST TASK</div>
+	<table cellpadding="0" cellspacing="0" width="100%">
+    <table cellpadding="0" cellspacing="0" style="background-color: #ffffff;" align="center">
+      <tr>
+        <td align="center" style="font-family: Arial; padding-top: 30px; padding-inline: auto; padding-bottom: 30px; font-size: 32px; font-weight: 700; text-transform: uppercase;">
+          <div class="container" >
+            Logo Here
+          </div>
+        </td>
+      </tr>
+    </table>
+		<table class="desktop-main" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+        <td align="center">
+          <div class="main-background">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="50%" valign="top">
+                          <div class="message--info">
+                            <h2 class="message--info-title">Sveta111, win!</br> lottery gifts</h2>
+
+                            <p class="message--info-text">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+
+                            <a class="message--info-button" href="#">Play</a>
+                          </div>
+                             
+                        </td>
+
+                        <td width="50%" valign="top">
+                          <div class="message--photo">
+                            <img src="https://s3-alpha-sig.figma.com/img/0ca5/47fc/f80c4bf0a8f3418fc1206cb0aa4de8c5?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MkRWoxnfZcaqWDgOkrR4a0iPsR6lqAi-P1IOcPryJpXPki9LNSQJ32N65LxSZ2mHLVvmFe6z97tvlcASUzqZByQaiVjd69wSYNG9qsnGO2R3VfNXJMiBSVJAfd3M20NvavrDT3nkahlupOXcHvKk6zmH9zWZTzFV6QvnaUYJ5j4BwiyWgqA6ji8JfDwLchcYETeE4zjQMjOseXuDIz-JOSDyBZ73w~R5w1C8fObQJkzp41dlOIpv3KciwTzOYS04PisHGAzi6iedHKpFkTjM3L8hEC-09M80yFBoLN2bPLwi2Ap7BRPqZBSAHIdJ-Fwl6IWSdMsIb9zdN-YbS8cGww__" 
+                            alt="Winner's prize" 
+                            style="
+                              display: block; 
+                              width: 172px; 
+                              height: 210px; 
+                              padding-left: 19px; 
+                              padding-right: 19px;
+                            ">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="50%" valign="top">
+                          <div class="message--info">
+                            <h2 class="message--info-title">Become a champion in tournaments</h2>
+
+                            <p class="message--info-text">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+
+                            <a class="message--info-button" href="#">Play</a>
+                          </div>
+                             
+                        </td>
+
+                        <td width="50%" valign="top">
+                          <div class="message--photo">
+                            <img src="https://s3-alpha-sig.figma.com/img/a0ce/2ee8/768d9842853c7af84f406eb4872bc227?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QGUo8jH07UhuDeswuFoO~2BazOMGDrxEp8ffUqShKtSPcLNDukO8VMP7fzAJ4QyL4hCkHv4pb42SmpkOm7-ampOmJfaMpFhz91Bkj0zXhV6PHoPKgRvU4KbVsMl1EMFu8JDtoZ6bokdWKqZKARh4faXvPPcuFj6e1ojBfQbKlKgUK4DKzWwJkgCFQ0fgwvSKBX2XSdDcDqWTYa1-t9c-whw50ZVEfvNscWmnm-gtP4uSwU7u8c2L~wMatTUHyLW1SuiJaa7g2uPAwA5Q6kzhYu8pAWHc5~5-1ORsdZZaAVD4DLlH3BmOi4teMGj1~PuyPxa53pxn~HOX1aF6PiRZKw__" 
+                            alt="Winner's prize" 
+                            style="
+                              display: block; 
+                              width: 210px; 
+                              height: 157px; 
+                              padding-top: 26px; 
+                              padding-bottom: 27px;
+                            ">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="50%" valign="top">
+                          <div style=" 
+                            width: 260px;
+                            margin-top: 68px; 
+                            margin-left: 20px; 
+                            margin-bottom: 68px;
+                            color: #ffffff;
+                            ">
+                            <h2 class="message--info-title">Claim your Bonuses</h2>
+
+                            <p class="message--info-text">Generous gifts are waiting for you in the form of no deposit bonuses and free spins in hot slots.</p>
+
+                            <a class="message--info-button" href="#">Take</a>
+                          </div>
+                             
+                        </td>
+
+                        <td width="50%" valign="top">
+                          <div style="">
+                            <img src="https://s3-alpha-sig.figma.com/img/9c92/237a/d12680030705b89a960d0bb6b4f0dcef?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvjHabV0GZkXpM1KUHL-bmOw9GQE0jgneEQmJjLbpUAseze7ZcukVEH0Rer45hOMn83Ij2u8jJYK6kCbJBrsphFdBdBpDcnRwtXzBhCqmcQobF4FyWHgJ2YeWrrlEPw9eqdxLJYH-r7Ivz102XTKWOxR0cKVkVWJIck4G2Vjir6LN~6mSQqFs5N8SzLGWMulsxfmV5x8lkbPKkI1AZOD27h81~fvwlyq34HQhjZrXTHCMmfbmB4N4f0WoU8baYvPW7VBiNDOisTQHejqKCdVutSwMJA~SaTIvXv778MGz11QunSxDlap3QdXBfoW565b2BPG25ow-hfXbgGt35ii7w__" 
+                            alt="Bonuses" 
+                            style="
+                              display: block; 
+                              width: 231px; 
+                              height: 213px;
+                              margin-top: 33px;
+                              margin-bottom: 33px;
+                              margin-right: 9px;
+                            ">
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table class="mobile-main" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+        <td align="center">
+          <div class="main-background">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="100%" valign="top">
+                          <div class="message--photo">
+                            <img src="https://s3-alpha-sig.figma.com/img/0ca5/47fc/f80c4bf0a8f3418fc1206cb0aa4de8c5?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MkRWoxnfZcaqWDgOkrR4a0iPsR6lqAi-P1IOcPryJpXPki9LNSQJ32N65LxSZ2mHLVvmFe6z97tvlcASUzqZByQaiVjd69wSYNG9qsnGO2R3VfNXJMiBSVJAfd3M20NvavrDT3nkahlupOXcHvKk6zmH9zWZTzFV6QvnaUYJ5j4BwiyWgqA6ji8JfDwLchcYETeE4zjQMjOseXuDIz-JOSDyBZ73w~R5w1C8fObQJkzp41dlOIpv3KciwTzOYS04PisHGAzi6iedHKpFkTjM3L8hEC-09M80yFBoLN2bPLwi2Ap7BRPqZBSAHIdJ-Fwl6IWSdMsIb9zdN-YbS8cGww__" 
+                            alt="Winner's prize" 
+                            style="
+                              display: block; 
+                              width: 130px; 
+                              height: 140px; 
+                              padding-left: 75px; 
+                              padding-right: 75px;
+                            ">
+                          </div>
+
+                          <div class="message--info">
+                            <h2 class="message--info-title">Sveta111, win!</br> lottery gifts</h2>
+
+                            <p class="message--info-text">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+
+                            <a class="message--info-button" href="#">Play</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="100%" valign="top">
+                          <div class="message--photo">
+                            <img src="https://s3-alpha-sig.figma.com/img/a0ce/2ee8/768d9842853c7af84f406eb4872bc227?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QGUo8jH07UhuDeswuFoO~2BazOMGDrxEp8ffUqShKtSPcLNDukO8VMP7fzAJ4QyL4hCkHv4pb42SmpkOm7-ampOmJfaMpFhz91Bkj0zXhV6PHoPKgRvU4KbVsMl1EMFu8JDtoZ6bokdWKqZKARh4faXvPPcuFj6e1ojBfQbKlKgUK4DKzWwJkgCFQ0fgwvSKBX2XSdDcDqWTYa1-t9c-whw50ZVEfvNscWmnm-gtP4uSwU7u8c2L~wMatTUHyLW1SuiJaa7g2uPAwA5Q6kzhYu8pAWHc5~5-1ORsdZZaAVD4DLlH3BmOi4teMGj1~PuyPxa53pxn~HOX1aF6PiRZKw__" 
+                            alt="Winner's prize" 
+                            style="
+                              display: block; 
+                              width: 180px; 
+                              height: 140px;
+                              padding-left: 50px;
+                              padding-right: 50px;
+                            ">
+                          </div>
+
+                          <div class="message--info">
+                            <h2 class="message--info-title">Become a champion in</br> tournaments</h2>
+
+                            <p class="message--info-text">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+
+                            <a class="message--info-button" href="#">Play</a>
+                          </div> 
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            
+            
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center">
+                  <div class="message--wrapper container">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%;">
+                      <tr>
+                        <td width="100%" valign="top">
+                          <div>
+                            <img src="https://s3-alpha-sig.figma.com/img/9c92/237a/d12680030705b89a960d0bb6b4f0dcef?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvjHabV0GZkXpM1KUHL-bmOw9GQE0jgneEQmJjLbpUAseze7ZcukVEH0Rer45hOMn83Ij2u8jJYK6kCbJBrsphFdBdBpDcnRwtXzBhCqmcQobF4FyWHgJ2YeWrrlEPw9eqdxLJYH-r7Ivz102XTKWOxR0cKVkVWJIck4G2Vjir6LN~6mSQqFs5N8SzLGWMulsxfmV5x8lkbPKkI1AZOD27h81~fvwlyq34HQhjZrXTHCMmfbmB4N4f0WoU8baYvPW7VBiNDOisTQHejqKCdVutSwMJA~SaTIvXv778MGz11QunSxDlap3QdXBfoW565b2BPG25ow-hfXbgGt35ii7w__" 
+                            alt="Bonuses" 
+                            style="
+                              display: block; 
+                              width: 230px; 
+                              height: 223px;
+                              margin-top: -30px;
+                              margin-bottom: 20px;
+                              padding-left: 35px;
+                              padding-right: 35px;
+                            ">
+                          </div>
+
+                          <div class="message--info">
+                            <h2 class="message--info-title">Claim your Bonuses</h2>
+
+                            <p class="message--info-text">Generous gifts are waiting for you in the form of no deposit bonuses and free spins in hot slots.</p>
+
+                            <a class="message--info-button" href="#">Take</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff;" align="center" border="0">
+      <tr>
+        <td align="center" style="font-family: Arial; ">
+          <div class="container" style="margin-top: 20px; margin-bottom: 20px; font-size: 14px; line-height: 16px; color: #52575C">
+  
+            
+
+            <div class="footer-contacts">
+              <p style="margin-top: 0; margin-bottom: 10px;">If you have questions, please contact us:</p>
+
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%; padding-bottom: 14px;">
+                <tr>
+                  <td width="184px" valign="top">
+                    <a src="" href="mailto:support@support.email" class="link">support@support.email</a>
+                  </td>
+  
+                  <td width="116px" valign="top">
+                    <div style="text-align: right;">
+                      <a href="tel:123456789" class="link" style="margin-left: 20px;">123456789</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <p style="border-bottom: 1px solid #52575C;"></p>
+
+            <p>Some games and bonuses may not be available in your country.</p>
+
+            <p>You take all the credit for the fact that you have registered on our site.
+              For a return link with us, please send a copy to the whole sheet.
+              You can <a href="#" style="color: #005BEA">subscribe</a></p>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+	</table>
+</body>
+
+</html>
